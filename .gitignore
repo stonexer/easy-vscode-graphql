@@ -1,0 +1,9 @@
+*.swp
+*~
+.DS_Store
+.secrets
+npm-debug.log
+yarn-error.log
+
+out
+node_modules/

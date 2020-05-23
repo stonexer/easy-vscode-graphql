@@ -1,0 +1,72 @@
+{
+  "name": "easy-vscode-graphql",
+  "description": "",
+  "author": "SToneX",
+  "license": "MIT",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stonexer/easy-vscode-graphql.git"
+  },
+  "keywords": [
+    "GraphQL"
+  ],
+  "engines": {
+    "vscode": "^1.43.0"
+  },
+  "activationEvents": [
+    "onLanguage:graphql"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "grammars": [
+      {
+        "language": "graphql",
+        "path": "./grammars/graphql.json",
+        "scopeName": "source.graphql"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Easy VSCode GraphQL"
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "dev": "webpack -w",
+    "build": "webpack",
+    "watch": "tsc -b -w"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@babel/types": "^7.9.6",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.0",
+    "@types/vscode": "^1.45.1",
+    "@typescript-eslint/parser": "^2.3.0",
+    "babel-loader": "^8.1.0",
+    "cz-conventional-changelog": "3.2.0",
+    "eslint": "^7.1.0",
+    "mocha": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "core-js": "3",
+    "graphql": "^15.0.0",
+    "graphql-language-service": "^3.0.0-alpha.1",
+    "graphql-language-service-server": "^2.4.0-alpha.9",
+    "graphql-language-service-types": "^1.6.0-alpha.6",
+    "vscode-languageclient": "^6.1.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
