@@ -11,8 +11,10 @@
   "keywords": [
     "GraphQL"
   ],
+  "displayName": "Easy GraphQL",
+  "publisher": "SToneX",
   "engines": {
-    "vscode": "^1.43.0"
+    "vscode": "^1.45.1"
   },
   "activationEvents": [
     "onLanguage:graphql"
@@ -32,7 +34,7 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
+    "vscode:prepublish": "npm run build",
     "dev": "webpack -w",
     "build": "webpack",
     "watch": "tsc -b -w"
