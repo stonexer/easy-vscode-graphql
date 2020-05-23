@@ -1,5 +1,11 @@
 .vscode/**
 **/*.ts
 **/*.map
+src/**
+.eslintignore
+.eslintrc.js
+.prettierrc.js
 .gitignore
-**/tsconfig.json
+tsconfig.json
+webpack.config.js
+yarn.lock
